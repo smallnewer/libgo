@@ -138,19 +138,7 @@ struct real_typename_helper {};
 template <typename T>
 std::string real_typename()
 {
-    return "unknow_type";
-//#if defined(__GNUC__)
-    /// gcc.
-//    int s;
-//    char * realname = abi::__cxa_demangle(typeid(real_typename_helper<T>).name(), 0, 0, &s);
-//    std::string result(realname);
-//    free(realname);
-//#else
-//    std::string result(typeid(real_typename_helper<T>).name());
-//#endif 
-//    std::size_t start = result.find_first_of('<') + 1;
-//    std::size_t end = result.find_last_of('>');
-//    return result.substr(start, end - start);
+    return "unkonw_type";
 }
 
 #if ENABLE_DEBUGGER
