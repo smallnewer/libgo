@@ -30,7 +30,7 @@ BlockObject::~BlockObject()
 void BlockObject::CoBlockWait()
 {
     if (!g_Scheduler.IsCoroutine()) {
-        while (!TryBlockWait()) usleep(10 * 1000);
+        while (!TryBlockWait()) usleep(10);
         return ;
     }
 
